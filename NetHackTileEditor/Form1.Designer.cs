@@ -82,9 +82,9 @@
             // 
             this.imageGroup.Controls.Add(this.thumbnail2);
             this.imageGroup.Controls.Add(this.thumbnail);
-            this.imageGroup.Location = new System.Drawing.Point(84, 235);
+            this.imageGroup.Location = new System.Drawing.Point(79, 235);
             this.imageGroup.Name = "imageGroup";
-            this.imageGroup.Size = new System.Drawing.Size(70, 105);
+            this.imageGroup.Size = new System.Drawing.Size(75, 135);
             this.imageGroup.TabIndex = 4;
             this.imageGroup.TabStop = false;
             this.imageGroup.Text = "Tile image";
@@ -92,18 +92,19 @@
             // thumbnail2
             // 
             this.thumbnail2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.thumbnail2.Location = new System.Drawing.Point(17, 58);
-            this.thumbnail2.MaximumSize = new System.Drawing.Size(32, 32);
-            this.thumbnail2.MinimumSize = new System.Drawing.Size(32, 32);
+            this.thumbnail2.Location = new System.Drawing.Point(13, 65);
+            this.thumbnail2.MaximumSize = new System.Drawing.Size(48, 48);
+            this.thumbnail2.MinimumSize = new System.Drawing.Size(48, 48);
             this.thumbnail2.Name = "thumbnail2";
-            this.thumbnail2.Size = new System.Drawing.Size(32, 32);
+            this.thumbnail2.Size = new System.Drawing.Size(48, 48);
             this.thumbnail2.TabIndex = 1;
             this.thumbnail2.TabStop = false;
+            this.thumbnail2.Click += new System.EventHandler(this.thumbnail2_Click);
             // 
             // thumbnail
             // 
             this.thumbnail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.thumbnail.Location = new System.Drawing.Point(25, 25);
+            this.thumbnail.Location = new System.Drawing.Point(29, 29);
             this.thumbnail.MaximumSize = new System.Drawing.Size(16, 16);
             this.thumbnail.MinimumSize = new System.Drawing.Size(16, 16);
             this.thumbnail.Name = "thumbnail";

@@ -349,10 +349,13 @@ namespace NetHackTileEditor
                 {
                     for (int x = 0; x < X_SIZE; x++)
                     {
-                        bitmap.SetPixel(x * 2, y * 2, imageButtons[x, y].BackColor);
-                        bitmap.SetPixel(x * 2, (y * 2) + 1, imageButtons[x, y].BackColor);
-                        bitmap.SetPixel((x * 2) + 1, y * 2, imageButtons[x, y].BackColor);
-                        bitmap.SetPixel((x * 2) + 1, (y * 2) + 1, imageButtons[x, y].BackColor);
+                        for(int x1 = 0; x1 < 3; x1++)
+                        {
+                            for(int y1 = 0; y1 < 3; y1++)
+                            {
+                                bitmap.SetPixel((x * 3) + x1, (y * 3) + y1, imageButtons[x, y].BackColor);
+                            }
+                        }
                     }
                 }
             }
@@ -453,5 +456,10 @@ namespace NetHackTileEditor
             GenerateOutput();
         }
         #endregion
+
+        private void thumbnail2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
